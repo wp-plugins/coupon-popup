@@ -1,0 +1,31 @@
+.base.orange.coupon-popup-container .coupon-popup-button {
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffb715, 0 4px 2px -2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffb715, 0 4px 2px -2px rgba(0, 0, 0, 0.25);
+    box-shadow:inset 0px 1px 0px 0px #ffb715, 0 4px 2px -2px rgba(0, 0, 0, 0.25);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffb207), color-stop(1, #faad00));
+    background:-moz-linear-gradient(top, #ffb207 5%, #faad00 100%);
+    background:-webkit-linear-gradient(top, #ffb207 5%, #faad00 100%);
+    background:-o-linear-gradient(top, #ffb207 5%, #faad00 100%);
+    background:-ms-linear-gradient(top, #ffb207 5%, #faad00 100%);
+    background:linear-gradient(to bottom, #ffb207 5%, #faad00 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb207', endColorstr='#faad00',GradientType=0);
+    background-color:#ffb207;
+    border: 1px solid #f2a700;
+}
+
+.base.orange.coupon-popup-container .coupon-popup-button:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #faad00), color-stop(1, #ffb207));
+  background:-moz-linear-gradient(top, #faad00 5%, #ffb207 100%);
+  background:-webkit-linear-gradient(top, #faad00 5%, #ffb207 100%);
+  background:-o-linear-gradient(top, #faad00 5%, #ffb207 100%);
+  background:-ms-linear-gradient(top, #faad00 5%, #ffb207 100%);
+  background:linear-gradient(to bottom, #faad00 5%, #ffb207 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#faad00', endColorstr='#ffb207',GradientType=0);
+  background-color:#faad00;
+}
+
+.base.orange.coupon-popup-container .coupon-popup-code {
+  border: 1px dashed #f2a700;
+  color: #cf8f01;
+  background: #ffefcb;
+}

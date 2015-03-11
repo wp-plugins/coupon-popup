@@ -1,0 +1,30 @@
+.coupon-popup-container * {
+    box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+}
+
+.coupon-popup-container.revealed .coupon-popup-revealed {
+    display: block;
+}
+
+.coupon-popup-container.revealed .coupon-popup-reveal {
+    display: none;
+}
+
+.coupon-popup-popup {
+    display: none;
+}
+
+.coupon-popup-revealed {
+    display: none;
+}
+
+.vex-content {
+    padding: 0 !important;
+}
+
+.vex-dialog-message,
+.vex-dialog-input {
+    margin-bottom: 0 !important;
+}
