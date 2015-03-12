@@ -1,11 +1,13 @@
 <?php
 /*
 Plugin Name: Coupon Popup
-Description: Make your coupon pop!
-Version: 1.0.0
+Description: Easily create beautiful customizable coupon widgets that can be revealed to increase conversions.
+Version: 1.1.0
 */
 
 require_once 'inc/assets.php';
+require_once 'inc/attribution.php';
+require_once 'inc/settings.php';
 
 class CouponPopup
 {
@@ -151,18 +153,10 @@ function coupon_code($atts) {
 
 add_shortcode('coupon', 'coupon_code');
 
-add_action('wp_loaded', 'check_redirect');
+add_action('wp_loaded', 'coupon_popup_check_redirect');
 
-add_filter('the_content', 'add_post_attribution', 1000);
-
-function check_redirect() {
+function coupon_popup_check_redirect() {
     if (isset($_GET['goto']) && filter_var($_GET['goto'], FILTER_VALIDATE_URL)) {
     	wp_redirect($_GET['goto']);
     }
-}
-
-function add_post_attribution($post) {
-    $attribution = '<br /><div class="coupon-popup-attribution"><a href="http://www.sumoshopper.com/coupon-popup" target="_blank">Coupon Popup</a> by <a href="http://www.sumoshopper.com" target="_blank">Sumoshopper</a></div>';
-
-    return $post . $attribution;
 }
