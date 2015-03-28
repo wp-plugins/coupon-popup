@@ -12,8 +12,8 @@ Easily create beautiful customizable coupon widgets that can be revealed to incr
 Coupon Popup is a WordPress plugin from Sumoshopper that allows you to easily create customizable coupon buttons. Create an eye catching coupon website with any theme instantly. 
 Use easy to create shortcodes for pages, posts, and even your sidebar. Coupon Popup is the only coupon plugin which utilizes a pop-under window upon click to maximize revenue. 
 
+[Live Demo](http://www.couponpopup.com/demo)  
 [Documentation](http://www.couponpopup.com/documentation)
-[Live Demo](http://www.couponpopup.com/demo)
 
 == Installation ==
 
