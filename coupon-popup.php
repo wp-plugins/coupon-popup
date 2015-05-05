@@ -2,7 +2,7 @@
 /*
 Plugin Name: Coupon Popup
 Description: Easily create beautiful customizable coupon widgets that can be revealed to increase conversions.
-Version: 1.1.0
+Version: 1.1.1
 */
 
 require_once 'inc/assets.php';
@@ -147,6 +147,9 @@ function coupon_code($atts) {
     if (file_exists(plugin_dir_path(__FILE__) . $css_url)) {
         wp_enqueue_style($folder_theme.'_'.$style_theme, plugins_url() . '/coupon-popup/' . 'themes/'.$folder_theme.'/'.$style_theme.'.css');
     }
+
+    # Add attribution link
+    add_filter('the_content', 'coupon_popup_add_post_attribution', 1000);   // make sure last filter to add
 
     return $template;
 }

@@ -3,7 +3,7 @@ Contributors: sumoshopper
 Tags: coupon, coupons, reveal, popup
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 1.0.0
+Stable tag: 1.1.1
 
 Easily create beautiful customizable coupon widgets that can be revealed to increase conversions.
 
@@ -36,6 +36,10 @@ To install the plugin manually:
 4. Choose from many styles!
 
 == Changelog ==
+
+= 1.1.1 (May 5, 2015) =
+* Fix attribution link to only show on pages with coupon
+* Make options page prettier
 
 = 1.1.0 (February 26, 2015) =
 * Add options page
