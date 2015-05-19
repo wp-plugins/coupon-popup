@@ -37,6 +37,11 @@ To install the plugin manually:
 
 == Changelog ==
 
+= 1.2.0 (May 18, 2015) =
+* Normalize styles so it can overriden easier
+* Added `button_popup` attribute so you can customize the popup button text
+* Cleaned up some code
+
 = 1.1.1 (May 5, 2015) =
 * Fix attribution link to only show on pages with coupon
 * Make options page prettier
