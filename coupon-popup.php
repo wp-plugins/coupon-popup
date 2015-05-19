@@ -2,7 +2,7 @@
 /*
 Plugin Name: Coupon Popup
 Description: Easily create beautiful customizable coupon widgets that can be revealed to increase conversions.
-Version: 1.1.1
+Version: 1.2.0
 */
 
 require_once 'inc/assets.php';
@@ -14,6 +14,7 @@ class CouponPopup
     public static $classPrefix = 'coupon-popup-';
     public static $linkClass = 'coupon-popup-link';
 	public static $codeClass = 'coupon-popup-code';
+    public static $parentClass = 'coupon-popup coupon-popup-override';
 	public static $popupLinkClass = 'coupon-popup-popup-link';
 	public static $containerClass = 'coupon-popup-container';
 	public static $popupClass = 'coupon-popup-popup';
@@ -42,6 +43,7 @@ function coupon_code($atts) {
         'time_zone' => 'America/Los_Angeles',
 		'image' => '',
         'button' => NULL,
+        'button_popup' => "Get Deal",
         'hide_button' => 0,
         'theme' => 'base',
         'pop' => 1,
@@ -110,8 +112,11 @@ function coupon_code($atts) {
         }
     }
 
+    $parent_class = CouponPopup::$parentClass;
+    $theme_class = $coupon['type'] .' '. $coupon['theme'] .' '. $coupon['style'];
+
     // Build css classes
-    $css_classes = $coupon['type'] .' '. $coupon['theme'] .' '. $coupon['style'];
+    $css_classes = $theme_class;
     $css_classes = $css_classes . ($coupon['show'] ? ' live' : '');
     $css_classes = $css_classes . ($coupon['expired'] ? ' expired' : '');
     $css_classes = $css_classes . ($coupon['reveal'] ? ' revealed' : '');

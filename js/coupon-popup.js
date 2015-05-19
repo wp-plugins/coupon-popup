@@ -22,7 +22,7 @@ jQuery(function (){
 
             vex.dialog.alert({
                 message: $popup.html(),
-                className: 'coupon-popup-vex ' + themeClass,
+                className: 'coupon-popup coupon-popup-override coupon-popup-vex ' + themeClass,
                 showCloseButton: true,
                 afterOpen: function($vexContent) {
                     $vexContent.addClass('coupon-popup-container popup ' + cssClasses);
